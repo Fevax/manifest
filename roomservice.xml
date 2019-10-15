@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="universal8895"
+	   fetch="https://github.com/universal8895"
+	   revision="lineage-17.0" />
+	   
+  <remote  name="Fevax"
+	   fetch="https://github.com/Fevax"
+	   revision="lineage-17.0" />	   
+	   
+  
+  <!-- Device Trees -->
+  <project path="device/samsung/universal8895" name="android_device_samsung_universal8895" remote="universal8895" />
+  <project path="device/samsung/dreamlte" name="android_device_samsung_dreamlte" remote="universal8895" />
+  <project path="device/samsung/dream2lte" name="android_device_samsung_dream2lte" remote="universal8895" />
+
+  <!-- Kernel -->
+  <project path="kernel/samsung/universal8895" name="android_kernel_samsung_universal8895" remote="Fevax" />
+
+  <!-- Vendor -->
+  <project path="vendor/samsung/universal8895" name="android_vendor_samsung_universal8895" remote="Fevax" />
+
+  <!-- Hardware -->
+  <project path="hardware/samsung/slsi-cm_exynos8895" name="android_hardware_samsung_slsi-cm_exynos8895" remote="universal8895" />
+  <project path="hardware/samsung" name="LineageOS/android_hardware_samsung" remote="github" />
+  
+  <!-- Extras -->
+  <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" />
+
+</manifest>
